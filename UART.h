@@ -28,9 +28,9 @@ typedef const UART_cfg_t* UART_cfgPtr_t;
 
 typedef uint8 UART_error_t;
 #define OK   0
-#define INVALID_CFG   1
-#define PARITY_ERROR  2
-#define FRAMING_ERROR 3
+#define UART_INVALID_CFG   1
+#define UART_PARITY_ERROR  2
+#define UART_FRAMING_ERROR 3
 
 extern UART_error_t UART_init(UART_cfgPtr_t);
 extern UART_error_t UART_sendByte(const uint8);
